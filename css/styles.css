@@ -1,5 +1,5 @@
 .brand-logo{
-	margin-left: 10px;
+	margin-left: 72px;
 }
 
 .title-index{
@@ -24,4 +24,9 @@ body {
     top: 0;
     margin-bottom: 0px;
     z-index: 997;
+}
+
+.ico{
+	max-height: 64px!important;
+    padding: 15px 0!important;
 }

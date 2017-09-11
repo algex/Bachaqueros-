@@ -18,7 +18,9 @@
        <header>
         <nav class="red accent-4 nav-fixed">
         <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Denuncia al bachaquero</a>
+        <a href="#!" class="brand-logo hide-on-small-only">Denuncia al bachaquero</a>
+        <a href="#!" class="brand-logo show-on-small">Denuncia</a>
+        <img class="ico" src="img/ico.png">
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#">Nuestro Equipo</a></li>
@@ -103,10 +105,34 @@
     </form>
   </div>
       <!--End Form-->
+  </div>
+  </main>
 
-      </div>
+<!--footer-->
+<footer class="page-footer red accent-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">¡Carabobo Te Quiero!</h5>
+                <p class="grey-text text-lighten-4">Ingresar algún texto aquí!.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Sígueme en Twitter</h5>
+                <ul>
+                  <li><a href="https://twitter.com/rafaellacava10" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @rafaellacava10</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Rafael Lacava
+            <a class="grey-text text-lighten-4 right" href="https://gerardo.com.ve/">Hosting y diseño Gerardo.com.ve</a>
+            </div>
+          </div>
+        </footer>
 
-    </main>
+<!--End footer-->
       
 <!--JAVASCRIPT-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
