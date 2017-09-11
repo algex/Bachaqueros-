@@ -39,53 +39,42 @@
 
 
     <main>
+    <div class="container">
       <h3 class="title-index">Denunciar al bachaquero es tu deber</h3>
-      <h5 class="title-index">(Todos tus datos son Confidenciales)</h5>
+      <h5 class="ll">(Todos tus datos son Confidenciales)</h5>
 
       <!--Form-->
 <div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Ingresa tu nombre" id="first_name" type="text" class="validate">
+        <div class="input-field col s12 m6">
+          <input placeholder="Ingresa tu nombre" id="first_name" type="text" class="validate" required>
           <label for="first_name">Nombre</label>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="last_name" type="text" class="validate">
-          <label for="last_name">Apellido</label>
+          <label for="last_name">Apellido (opcional)</label>
         </div>
       </div>
   
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="email" type="email" class="validate">
           <label for="email" data-error="Correo inválido" data-success="Correcto">Correo Electrónico</label>
         </div>
 
-         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Dirección</label>
+         <div class="input-field col s12 m6">
+          <input id="address" type="text" class="validate">
+          <label for="last_name">Dirección (opcional)</label>
         </div>
 
-        <div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
+        <div class="input-field col s12 m6">
           <input id="icon_telephone" type="tel" class="validate">
           <label for="icon_telephone">Telefono (opcional)</label>
         </div>
 
-        <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
-          <label for="textarea1">Mensaje</label>
-        </div>
-      </div>
-    </form>
-  </div>
-
-    <div class="file-field input-field">
-      <div class="btn">
+  <div class="file-field input-field col s12 m6">
+      <div class="btn red accent-4">
         <span>Foto (Opcional)</span>
         <input type="file">
       </div>
@@ -94,14 +83,28 @@
       </div>
     </div>
 
-     <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Enviar
-    <i class="material-icons right">send</i>
-  </button>
+      
+      <div class="row">
+        <div class="input-field col s12 m12">
+          <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
+          <label for="textarea1">Mensaje</label>
+        </div>
+    
+    
+  </div>
+
+    <div class="center-align">
+     <button class="btn waves-effect waves-light btn-large red accent-4 " type="submit" name="action">Enviar
+      <i class="material-icons right">send</i>
+     </button>
+     </div>
 
       </div>
     </form>
   </div>
       <!--End Form-->
+
+      </div>
 
     </main>
       
