@@ -16,10 +16,10 @@
     <body>
        <!--Head bar-->
        <header>
-        <nav class="red accent-4 nav-fixed">
+        <nav class="red darken-4 nav-fixed">
         <div class="nav-wrapper">
-        <a href="#!" class="brand-logo hide-on-small-only">Denuncia al bachaquero</a>
-        <a href="#!" class="brand-logo show-on-small">Denuncia</a>
+        <a href="#!" class="brand-logo hide-on-small-only">Proyecto 0 bachaquero</a>
+        <a href="#!" class="brand-logo show-on-small">Proyecto 0</a>
         <img class="ico" src="img/ico.png">
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
@@ -76,7 +76,8 @@
         </div>
 
   <div class="file-field input-field col s12 m6">
-      <div class="btn red accent-4">
+      <div class="btn red darken-4">
+      <i class="material-icons right">file_upload</i>
         <span>Foto (Opcional)</span>
         <input type="file">
       </div>
@@ -96,7 +97,7 @@
   </div>
 
     <div class="center-align">
-     <button class="btn waves-effect waves-light btn-large red accent-4 " type="submit" name="action">Enviar
+     <button class="btn waves-effect waves-light btn-large red darken-4" type="submit" name="action">Enviar
       <i class="material-icons right">send</i>
      </button>
      </div>
@@ -109,7 +110,7 @@
   </main>
 
 <!--footer-->
-<footer class="page-footer red accent-4">
+<footer class="page-footer red darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
