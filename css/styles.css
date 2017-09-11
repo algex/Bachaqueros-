@@ -4,13 +4,19 @@
 
 .title-index{
 	text-align: center;
+	font-family: 'Anton', sans-serif;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-main {
-    flex: 1 0 auto;
-  }
+    padding-top: 100px;
+}
+
+
+.nav-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-bottom: 0px;
+    z-index: 997;
+}
