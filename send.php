@@ -1,17 +1,17 @@
 <?php
 
-	$to = "gerardo@gerardo.com.ve";
-	$name = $_Post[name];
-	$last_name = $_Post[last_name];
-	$email = $_Post[email];
-	$address = $_Post[address];
-	$phone = $_Post[phone];
-	$message = $_Post[text];
+	$to = "gerardoj2411@gmail.com";
+	$name = $_POST['name'];
+	$last_name = $_POST['last_name'];
+	$email = $_POST['email'];
+	$address = $_POST['address'];
+	$phone = $_POST['phone'];
+	$message = $_POST['text'];
 
 	/*Headers of mail*/
-	$header="MIME-Version:1.0;\r\n";
+	$header ="MIME-Version:1.0;\r\n";
 	$header.="Content-type: text/html; \r\n charset=iso-8859-1 \r\n";
-	$header.="From: Denuncias <denuncias@alpseguridad.com.ve> \r\n";
+	$header.="From: Denuncias <gerardo@gerardo.com.ve> \r\n";
 	/*End Headers of mail*/
 
 	/*content mail*/
@@ -37,6 +37,9 @@
 
  	/*End Send email*/
 
- 	header("Location:enviado.php");
-
+ 	echo '
+ 	<script>
+     alert("Enviado");
+     location.href ="https://pruebasgerardo.000webhostapp.com/";
+    </script> ';
 ?>
