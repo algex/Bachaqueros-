@@ -17,7 +17,6 @@
         <nav class="red darken-4 nav-fixed">
           <div class="nav-wrapper">
             <a href="#!" class="brand-logo hide-on-small-only">Proyecto 0 bachaquero</a>
-            <a href="#!" class="brand-logo show-on-small">Proyecto 0</a>
             <img class="ico" src="img/icono.png">
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">

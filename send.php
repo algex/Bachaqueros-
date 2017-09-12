@@ -40,6 +40,6 @@
  	echo '
  	<script>
      alert("Enviado");
-     location.href ="https://pruebasgerardo.000webhostapp.com/";
+     location.href ="index.php";
     </script> ';
 ?>
