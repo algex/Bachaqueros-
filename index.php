@@ -7,14 +7,14 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
     <!--Head bar-->
       <header>
-        <nav class="red darken-4 nav-fixed">
+        <nav class="materialize-red nav-fixed darken-4">
           <div class="nav-wrapper">
             <a href="#!" class="brand-logo hide-on-small-only">Proyecto 0 bachaquero</a>
             <img class="ico" src="img/icono.png">
@@ -40,8 +40,8 @@
         <div class="center-align">
           <img class="responsive-img imga" src="img/banner.gif">
         </div>
-        <h3 class="title-index">Denunciar al bachaquero es tu deber</h3>
-        <h5 class="ll">(Todos tus datos son Confidenciales)</h5>
+        <h1 class="center teal-text title-index">Denunciar al bachaquero es tu deber</h1>
+        <h5 class="center grey-text">(Todos tus datos son Confidenciales)</h5>
     <!--Form-->
       <div class="row">
         <form class="col s12" action="send.php" method="post">
@@ -93,7 +93,7 @@
           </div>
 
           <div class="center-align">
-            <button class="btn waves-effect waves-light btn-large red darken-4" type="submit" name="action">Enviar
+            <button class="btn waves-effect waves-light btn-large materialize-red darken-4" type="submit" name="action">Enviar
             <i class="material-icons right">send</i>
             </button>
           </div>
