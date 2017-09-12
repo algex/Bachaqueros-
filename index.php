@@ -18,7 +18,7 @@
           <div class="nav-wrapper">
             <a href="#!" class="brand-logo hide-on-small-only">Proyecto 0 bachaquero</a>
             <a href="#!" class="brand-logo show-on-small">Proyecto 0</a>
-            <img class="ico" src="img/ico.png">
+            <img class="ico" src="img/icono.png">
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="#">Nuestro Equipo</a></li>
@@ -38,6 +38,9 @@
     <!-- END Head bar-->
     <main>
       <div class="container">
+        <div class="center-align">
+          <img class="responsive-img imga" src="img/banner.gif">
+        </div>
         <h3 class="title-index">Denunciar al bachaquero es tu deber</h3>
         <h5 class="ll">(Todos tus datos son Confidenciales)</h5>
     <!--Form-->
@@ -74,7 +77,7 @@
             <div class="file-field input-field col s12 m6">
               <div class="btn red darken-4">
               <i class="material-icons right">file_upload</i>
-              <span>Foto (Opcional)</span>
+              <span>Foto (evidencia)</span>
               <input type="file">
               </div>
             <div class="file-path-wrapper">
@@ -86,7 +89,7 @@
           <div class="row">
             <div class="input-field col s12 m12">
             <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
-            <label for="textarea1">Mensaje</label>
+            <label for="textarea1">Mensaje o denuncia</label>
             </div>
           </div>
 
@@ -99,6 +102,7 @@
       </div>
       <!--End Form-->
     </main>
+    
 
       <!--footer-->
       <footer class="page-footer red darken-4">

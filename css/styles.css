@@ -32,3 +32,8 @@ body {
 	max-height: 64px!important;
     padding: 15px 0!important;
 }
+
+.imga{
+	max-width: 100%;
+	height: auto;
+}
