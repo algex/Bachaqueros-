@@ -45,32 +45,32 @@
         <h5 class="ll">(Todos tus datos son Confidenciales)</h5>
     <!--Form-->
       <div class="row">
-        <form class="col s12">
+        <form class="col s12" action="send.php" method="post">
             <div class="row">
               <div class="input-field col s12 m6">
-                <input placeholder="Ingresa tu nombre" id="first_name" type="text" class="validate" required>
+                <input placeholder="Ingresa tu nombre" id="first_name" type="text" name="name" class="validate" required>
                 <label for="first_name">Nombre</label>
               </div>
 
               <div class="input-field col s12 m6">
-                <input id="last_name" type="text" class="validate">
+                <input id="last_name" type="text" class="validate" name="last_name">
                 <label for="last_name">Apellido (opcional)</label>
               </div>
             </div>
 
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" class="validate" name="email">
               <label for="email" data-error="Correo inválido" data-success="Correcto">Correo Electrónico</label>
             </div>
 
             <div class="input-field col s12 m6">
-              <input id="address" type="text" class="validate">
+              <input id="address" type="text" name="address" class="validate">
               <label for="last_name">Dirección (opcional)</label>
             </div>
 
             <div class="input-field col s12 m6">
-              <input id="icon_telephone" type="tel" class="validate">
+              <input id="icon_telephone" type="tel" name="phone" class="validate">
               <label for="icon_telephone">Telefono (opcional)</label>
             </div>
 
@@ -88,7 +88,7 @@
         
           <div class="row">
             <div class="input-field col s12 m12">
-            <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
+            <textarea id="textarea1" class="materialize-textarea" name="text" data-length="500"></textarea>
             <label for="textarea1">Mensaje o denuncia</label>
             </div>
           </div>
