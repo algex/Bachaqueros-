@@ -16,12 +16,10 @@
 	//end date 
 
 	/*Headers of mail*/
-	$header = "MIME-Version:1.0;\r\n";
-	$header .= "Content-type: multipart/mixed; \r\n charset=iso-8859-1 \r\n";
-	$header .= "From: Denuncias <gerardo@gerardo.com.ve> \r\n";
-	/*End Headers of mail*/
-
-	/*content mail*/
+ 	$header="MIME-Version:1.0;\r\n";
+  	$header.="Content-type: text/html; \r\n charset=iso-8859-1 \r\n";
+ 	$header.="From: Denuncias <gerardo@gerardo.com.ve> \r\n";
+  	/*End Headers of mail*/
 
 		$content_mail="<html>
  		<head>
@@ -29,11 +27,11 @@
  		</head>
  		<body>
  		<center><h1>Nueva denuncia</h1></center>
- 		<p><b>Nueva denuncia de: <u>$name</u></b></p>
- 		<p><b>Apellido: <u>$last_name</u></b></p>
- 		<p><b>Email de quien envía: <u>$email</u></b></p>
- 		<p><b>Dirección: <u>$address</u></b></p>
- 		<p><b>Teléfono: <u>$phone</u></b></p>
+ 		<p><b>Nueva denuncia de: $name</b></p>
+ 		<p><b>Apellido: $last_name</b></p>
+ 		<p><b>Email de quien envía: $email</b></p>
+ 		<p><b>Dirección: $address</b></p>
+ 		<p><b>Teléfono: $phone</b></p>
  		<p><b>Fecha: $dateformat</b></p>
  		<p><b>Mensaje o Denuncia: $message</b></p>
  		</body>
@@ -43,7 +41,7 @@
 
  	/*Send email*/
 
-	mail($to,"Nueva Denuncia de: ".$name, $body,$header)
+	mail($to,"Nueva Denuncia de: ".$name, $content_mail,$header);
 
  	/*End Send email*/
 
