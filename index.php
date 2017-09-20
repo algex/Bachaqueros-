@@ -44,7 +44,7 @@
         <h5 class="center grey-text">(Todos tus datos son Confidenciales)</h5>
     <!--Form-->
       <div class="row">
-        <form class="col s12" action="send.php" method="post">
+        <form class="col s12" action="send.php" method="post" enctype="multipart/form-data">
             <div class="row">
               <div class="input-field col s12 m6">
                 <input placeholder="Ingresa tu nombre" id="first_name" type="text" name="name" class="validate" required>
@@ -77,10 +77,10 @@
               <div class="btn red darken-4">
               <i class="material-icons right">file_upload</i>
               <span>Foto (evidencia)</span>
-              <input type="file">
+              <input type="file" name="evidence">
               </div>
             <div class="file-path-wrapper">
-              <input class="file-path validate" type="text">
+              <input class="file-path validate" type="text" >
             </div>
           </div>
 

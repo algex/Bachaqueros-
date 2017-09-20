@@ -8,14 +8,22 @@
 	$phone = $_POST['phone'];
 	$message = $_POST['text'];
 
+	//date
+	
+	$date = time();
+	$dateformat = date("j/n/y",$date);
+
+	//end date 
+
 	/*Headers of mail*/
-	$header ="MIME-Version:1.0;\r\n";
-	$header.="Content-type: text/html; \r\n charset=iso-8859-1 \r\n";
-	$header.="From: Denuncias <gerardo@gerardo.com.ve> \r\n";
+	$header = "MIME-Version:1.0;\r\n";
+	$header .= "Content-type: multipart/mixed; \r\n charset=iso-8859-1 \r\n";
+	$header .= "From: Denuncias <gerardo@gerardo.com.ve> \r\n";
 	/*End Headers of mail*/
 
 	/*content mail*/
-	$content_mail="<html>
+
+		$content_mail="<html>
  		<head>
  		<title>Nueva denuncia</title>
  		</head>
@@ -26,14 +34,16 @@
  		<p><b>Email de quien envía: <u>$email</u></b></p>
  		<p><b>Dirección: <u>$address</u></b></p>
  		<p><b>Teléfono: <u>$phone</u></b></p>
+ 		<p><b>Fecha: $dateformat</b></p>
  		<p><b>Mensaje o Denuncia: $message</b></p>
  		</body>
  		</html>";
- 	/* End content mail*/
+
+	/*END content mail*/
 
  	/*Send email*/
 
- 	mail($to,"Nueva Denuncia de: ".$name, $content_mail,$header);
+	mail($to,"Nueva Denuncia de: ".$name, $body,$header)
 
  	/*End Send email*/
 
