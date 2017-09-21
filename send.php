@@ -39,9 +39,24 @@
 
 	/*END content mail*/
 
+	/*Content Client*/
+
+	$content_mail_2 ="<head>
+ 		<title>Gracias por tu denuncia.</title>
+ 		</head>
+ 		<body>
+ 		<h1>Gracias por tu denuncia</h1>
+ 		<br>
+ 		<p>Gracias por tu denuncia $name $last_name, la estaremos revisando.</p>
+		</body>
+ 		</html>";
+
+	/*end content Client*/
+
  	/*Send email*/
 
 	mail($to,"Nueva Denuncia de: ".$name, $content_mail,$header);
+	mail($email, "Gracias por su denuncia",$content_mail_2,$header);
 
  	/*End Send email*/
 
